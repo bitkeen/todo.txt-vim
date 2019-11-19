@@ -18,16 +18,16 @@ setlocal wrapmargin=0
 
 " Mappings {{{1
 " Sort tasks {{{2
-nnoremap <script> <silent> <buffer> <localleader>s :%sort<CR>
-vnoremap <script> <silent> <buffer> <localleader>s :sort<CR>
+nnoremap <script> <silent> <buffer> <localleader>ss :%sort<CR>
+vnoremap <script> <silent> <buffer> <localleader>ss :sort<CR>
 nnoremap <script> <silent> <buffer> <localleader>s@ :%call todo#txt#sort_by_context()<CR>
 vnoremap <script> <silent> <buffer> <localleader>s@ :call todo#txt#sort_by_context()<CR>
 nnoremap <script> <silent> <buffer> <localleader>s+ :%call todo#txt#sort_by_project()<CR>
 vnoremap <script> <silent> <buffer> <localleader>s+ :call todo#txt#sort_by_project()<CR>
 nnoremap <script> <silent> <buffer> <localleader>sd :%call todo#txt#sort_by_date()<CR>
 vnoremap <script> <silent> <buffer> <localleader>sd :call todo#txt#sort_by_date()<CR>
-nnoremap <script> <silent> <buffer> <localleader>sdd :%call todo#txt#sort_by_due_date()<CR>
-vnoremap <script> <silent> <buffer> <localleader>sdd :call todo#txt#sort_by_due_date()<CR>
+nnoremap <script> <silent> <buffer> <localleader>st :%call todo#txt#sort_by_due_date()<CR>
+vnoremap <script> <silent> <buffer> <localleader>st :call todo#txt#sort_by_due_date()<CR>
 
 " Change priority {{{2
 nnoremap <script> <silent> <buffer> <localleader>j :call todo#txt#prioritize_increase()<CR>
