@@ -33,13 +33,20 @@ vnoremap <script> <silent> <buffer> <localleader>st :call todo#txt#sort_by_due_d
 nnoremap <script> <silent> <buffer> <localleader>j :call todo#txt#prioritize_increase()<CR>
 vnoremap <script> <silent> <buffer> <localleader>j :call todo#txt#prioritize_increase()<CR>
 nnoremap <script> <silent> <buffer> <localleader>k :call todo#txt#prioritize_decrease()<CR>
-vnoremap <script> <silent> <buffer> <localleader>k :call todo#txt#prioritize_decrease()<CR>
-nnoremap <script> <silent> <buffer> <localleader>a :call todo#txt#prioritize_add('A')<CR>
-vnoremap <script> <silent> <buffer> <localleader>a :call todo#txt#prioritize_add('A')<CR>
-nnoremap <script> <silent> <buffer> <localleader>b :call todo#txt#prioritize_add('B')<CR>
-vnoremap <script> <silent> <buffer> <localleader>b :call todo#txt#prioritize_add('B')<CR>
-nnoremap <script> <silent> <buffer> <localleader>c :call todo#txt#prioritize_add('C')<CR>
-vnoremap <script> <silent> <buffer> <localleader>c :call todo#txt#prioritize_add('C')<CR>
+inoremap <script> <silent> <buffer> <localleader>k :call todo#txt#prioritize_decrease()<CR>
+
+nnoremap <script> <silent> <buffer> <localleader>1 :call todo#txt#prioritize_add('A')<CR>
+vnoremap <script> <silent> <buffer> <localleader>1 :call todo#txt#prioritize_add('A')<CR>
+nnoremap <script> <silent> <buffer> <localleader>2 :call todo#txt#prioritize_add('B')<CR>
+vnoremap <script> <silent> <buffer> <localleader>2 :call todo#txt#prioritize_add('B')<CR>
+nnoremap <script> <silent> <buffer> <localleader>3 :call todo#txt#prioritize_add('C')<CR>
+vnoremap <script> <silent> <buffer> <localleader>3 :call todo#txt#prioritize_add('C')<CR>
+nnoremap <script> <silent> <buffer> <localleader>4 :call todo#txt#prioritize_add('D')<CR>
+vnoremap <script> <silent> <buffer> <localleader>4 :call todo#txt#prioritize_add('D')<CR>
+nnoremap <script> <silent> <buffer> <localleader>5 :call todo#txt#prioritize_add('E')<CR>
+vnoremap <script> <silent> <buffer> <localleader>5 :call todo#txt#prioritize_add('E')<CR>
+nnoremap <script> <silent> <buffer> <localleader>6 :call todo#txt#prioritize_add('F')<CR>
+vnoremap <script> <silent> <buffer> <localleader>6 :call todo#txt#prioritize_add('F')<CR>
 
 " Insert date {{{2
 inoremap <script> <silent> <buffer> date<Tab> <C-R>=strftime("%Y-%m-%d")<CR>
